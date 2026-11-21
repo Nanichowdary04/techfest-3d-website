@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Techfest 2027 — The Future Is Now</title>
+<meta name="description" content="Techfest 2027. Three days of AI, robotics, space tech and more, on an island above the clouds.">
+<meta name="theme-color" content="#0b0a09">
+<meta property="og:title" content="Techfest 2027 — The Future Is Now">
+<meta property="og:image" content="assets/img/og.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0a09'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='800' font-size='30' text-anchor='middle' fill='%23ffb547'%3ETF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- loader -->
+<div id="loader" role="status" aria-live="polite">
+  <p class="loader-word">TECHFEST <span>2027</span></p>
+  <div class="loader-bar"><i id="loader-bar"></i></div>
+  <p class="loader-pct mono" id="loader-pct">0%</p>
+</div>
+
+<!-- nav -->
+<header class="nav on-film" id="nav">
+  <a class="brand" href="#top" aria-label="Techfest 2027, back to top">TECHFEST <span>2027</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#zones">Zones</a>
+    <a href="#events">Events</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#passes">Passes</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="pill-btn skip" id="skip-film" type="button">Skip film</button>
+    <a class="pill-btn gold" href="#passes">Get your pass</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ═══════ THE FLIGHT (scroll-scrubbed film) ═══════ -->
+<section id="top" class="film" aria-label="Techfest 2027 opening flight">
+  <div class="film-stage">
+    <video id="film" muted playsinline preload="auto" disablepictureinpicture tabindex="-1" aria-hidden="true"></video>
+    <div class="film-shade" aria-hidden="true"></div>
+
+    <div class="cap cap-hero" data-in="-0.06" data-hold="0" data-out="0.085">
+      <p class="eyebrow mono" data-fest="when">15—17 January 2027 · Mumbai</p>
+      <h1 class="hero-title">TECHFEST</h1>
+      <p class="hero-sub">The future is <em>now</em>.</p>
+    </div>
+
+    <div class="cap cap-left" data-in="0.165" data-hold="0.225" data-out="0.3">
+      <p class="eyebrow mono">01 — The island</p>
+      <h2>Welcome above<br>the <em>clouds</em>.</h2>
+      <p>Three days of science, engineering and imagination, on an island built for builders.</p>
+    </div>
+
+    <div class="cap cap-right" data-in="0.335" data-hold="0.4" data-out="0.47">
+      <p class="eyebrow mono">02 — AI Valley</p>
+      <h2>Where models<br><em>learn</em> in the open.</h2>
+      <p>Forty glass labs, live model battles and a 36-hour hackathon.</p>
+    </div>
+
+    <div class="cap cap-left" data-in="0.505" data-hold="0.57" data-out="0.64">
+      <p class="eyebrow mono">03 — Robotics District</p>
+      <h2>Steel, sparks<br>and <em>servos</em>.</h2>
+      <p>RoboWars, humanoids on patrol and automation you can touch.</p>
+    </div>
+
+    <div class="cap cap-left" data-in="0.68" data-hold="0.745" data-out="0.815">
+      <p class="eyebrow mono">04 — Launchpad</p>
+      <h2>Built here.<br><em>Launched</em> here.</h2>
+      <p>Rocketry, CanSats and drone racing at the edge of the island.</p>
+    </div>
+
+    <div class="cap cap-finale" data-in="0.86" data-hold="0.93" data-out="1.25">
+      <p class="eyebrow mono">05 — Innovation Arena</p>
+      <h2 class="finale-title">TECHFEST <span>2027</span></h2>
+      <p>The future is <em>now</em>.</p>
+      <div class="cap-actions">
+        <a class="pill-btn gold lg" href="#passes">Get your pass</a>
+        <a class="pill-btn line lg" href="#zones">Explore the zones</a>
+      </div>
+    </div>
+
+    <ol class="chapters mono" id="chapters" aria-hidden="true">
+      <li data-at="0">Island</li><li data-at="0.319">AI Valley</li><li data-at="0.4919">Robotics</li><li data-at="0.6649">Launchpad</li><li data-at="0.8379">Arena</li>
+    </ol>
+    <div class="film-progress" aria-hidden="true"><i id="film-progress"></i></div>
+    <div class="scroll-cue mono" id="scroll-cue" aria-hidden="true">Scroll to fly <i></i></div>
+  </div>
+</section>
+
+<!-- ═══════ INTRO ═══════ -->
+<section class="intro" id="intro" aria-label="About Techfest">
+  <div class="wrap">
+    <p class="eyebrow mono reveal">Techfest 2027</p>
+    <p class="statement" id="statement">We don't wait for the future. We build it, test it and launch it, together, in three days.</p>
+    <ul class="stats">
+      <li class="reveal"><b data-count="80000" data-suffix="+">0</b><span>visitors</span></li>
+      <li class="reveal"><b data-count="120" data-suffix="+">0</b><span>events</span></li>
+      <li class="reveal"><b data-count="57" data-prefix="₹" data-suffix="L">0</b><span>in prizes</span></li>
+      <li class="reveal"><b data-count="450" data-suffix="+">0</b><span>colleges</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════ ZONES — 3D ring ═══════ -->
+<section class="zones" id="zones" aria-labelledby="zones-title">
+  <div class="zones-stage">
+    <div class="zones-head wrap">
+      <p class="eyebrow mono">Explore the island</p>
+      <h2 id="zones-title" class="h-xl">Five zones.<br><em>One</em> festival.</h2>
+    </div>
+    <div class="ring-viewport" id="ring-viewport">
+      <div class="ring" id="ring"></div>
+    </div>
+    <div class="zone-info wrap" aria-live="polite">
+      <div class="zone-meta">
+        <p class="mono zone-num" id="zone-num">01 / 05</p>
+        <h3 id="zone-name">The Island</h3>
+        <p id="zone-desc">Description</p>
+      </div>
+      <ul class="zone-events" id="zone-events"></ul>
+      <div class="zone-nav">
+        <button class="round-btn" id="zone-prev" type="button" aria-label="Previous zone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+        <button class="round-btn" id="zone-next" type="button" aria-label="Next zone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ EVENTS ═══════ -->
+<section class="events" id="events" aria-labelledby="events-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow mono reveal">Flagship events</p>
+        <h2 id="events-title" class="h-xl reveal">Compete. Build.<br><em>Launch.</em></h2>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Filter events"></div>
+    </div>
+    <div class="event-grid" id="event-grid"></div>
+  </div>
+</section>
+
+<!-- ═══════ SCHEDULE ═══════ -->
+<section class="schedule" id="schedule" aria-labelledby="schedule-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow mono reveal">Schedule</p>
+        <h2 id="schedule-title" class="h-xl reveal">Seventy-two<br><em>hours</em>.</h2>
+      </div>
+    </div>
+    <div class="days" id="days"></div>
+  </div>
+</section>
+
+<!-- ═══════ COUNTDOWN ═══════ -->
+<section class="countdown" id="countdown" aria-labelledby="countdown-title">
+  <div class="cd-stage">
+    <div class="cd-portal" id="cd-portal">
+      <img src="assets/img/finale.webp" alt="" aria-hidden="true" id="cd-img">
+      <div class="cd-shade" aria-hidden="true"></div>
+    </div>
+    <div class="cd-content">
+      <p class="eyebrow mono">Doors open in</p>
+      <h2 id="countdown-title" class="sr-only">Countdown to Techfest 2027</h2>
+      <div class="timer" role="timer" aria-label="Time until Techfest 2027">
+        <div><b data-u="d">00</b><span class="mono">days</span></div>
+        <div><b data-u="h">00</b><span class="mono">hours</span></div>
+        <div><b data-u="m">00</b><span class="mono">min</span></div>
+        <div><b data-u="s">00</b><span class="mono">sec</span></div>
+      </div>
+      <p class="mono cd-when" data-fest="where">15—17 January 2027 · Innovation Arena, Mumbai</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ PASSES ═══════ -->
+<section class="passes" id="passes" aria-labelledby="passes-title">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow mono reveal">Passes</p>
+      <h2 id="passes-title" class="h-xl reveal">Pick your <em>pass</em>.</h2>
+    </div>
+    <div class="pass-grid">
+      <article class="pass reveal" data-tilt>
+        <p class="mono pass-tier">Explorer</p>
+        <p class="pass-price">Free</p>
+        <ul><li>Exhibitions and open labs</li><li>Keynotes (as seats allow)</li><li>Pro-Night standing zone</li></ul>
+        <button class="pill-btn line" type="button" data-register>Register free</button>
+      </article>
+      <article class="pass featured reveal" data-tilt>
+        <p class="mono pass-badge">Most picked</p>
+        <p class="mono pass-tier">Competitor</p>
+        <p class="pass-price">₹499</p>
+        <ul><li>Entry to any 3 competitions</li><li>2 workshop credits</li><li>Hackathon meals and mentors</li><li>Everything in Explorer</li></ul>
+        <button class="pill-btn gold" type="button" data-register>Choose Competitor</button>
+      </article>
+      <article class="pass reveal" data-tilt>
+        <p class="mono pass-tier">All-Access</p>
+        <p class="pass-price">₹1,499</p>
+        <ul><li>Unlimited competitions and workshops</li><li>Reserved keynote and Pro-Night seats</li><li>Campus stay add-on</li></ul>
+        <button class="pill-btn line" type="button" data-register>Go All-Access</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FAQ ═══════ -->
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <div>
+      <p class="eyebrow mono reveal">Questions</p>
+      <h2 id="faq-title" class="h-xl reveal">Before you<br><em>arrive</em>.</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details><summary>Who can take part?</summary><p>Any student from a school, college or university. Junior events are open to grades 8–12.</p></details>
+      <details><summary>Do I need a team?</summary><p>Most competitions take teams of 1–4. Solo? Join the team-matching session on Day 1 morning.</p></details>
+      <details><summary>Is there accommodation?</summary><p>Yes. Limited campus stays come as an add-on with Competitor and All-Access passes.</p></details>
+      <details><summary>Can I volunteer?</summary><p>Volunteer applications open every October. Write to us through the contact link below.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a class="brand" href="#top">TECHFEST <span>2027</span></a>
+      <a class="pill-btn gold" href="#passes">Get your pass</a>
+    </div>
+    <div class="footer-cols">
+      <div><h4 class="mono">Festival</h4><a href="#zones">Zones</a><a href="#schedule">Schedule</a><a href="#countdown">Countdown</a></div>
+      <div><h4 class="mono">Take part</h4><a href="#events">Events</a><a href="#passes">Passes</a><a href="#faq">FAQ</a></div>
+      <div><h4 class="mono">Follow</h4><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">LinkedIn</a></div>
+      <div><h4 class="mono">Visit</h4><p data-fest="city">Mumbai, India</p><p class="mono small" data-fest="dates">15—17 January 2027</p></div>
+    </div>
+    <p class="footer-base mono">© 2027 Techfest · Built for builders</p>
+  </div>
+  <p class="footer-word" aria-hidden="true">TECHFEST</p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

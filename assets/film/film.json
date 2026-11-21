@@ -1,0 +1,14 @@
+{
+  "duration": 37.235,
+  "fps": 24,
+  "src": "assets/film/flight-1080.mp4",
+  "portrait": "assets/film/flight-portrait.mp4",
+  "chapters": {
+    "clouds": 0.0,
+    "approach": 0.146,
+    "ai": 0.319,
+    "robotics": 0.4919,
+    "launch": 0.6649,
+    "finale": 0.8379
+  }
+}

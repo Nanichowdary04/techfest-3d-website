@@ -1,0 +1,13 @@
+# build intermediates (rebuild with: python -I tools/build_film.py)
+clips/master.mp4
+clips/qc/
+
+# local editor / tool config
+.claude/
+__pycache__/
+*.pyc
+
+# OS clutter
+Thumbs.db
+desktop.ini
+.DS_Store
